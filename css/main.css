@@ -1,10 +1,8 @@
 /****************************************************************************
- * Business Name: Jitterbug Coffee Hop, 1855 S 700 E, Salt Lake City, UT 84105
- * Site Name: jitterbug.com
- * Created:   July 2015
+ * Business Name: Queer Continuum Conference
+ * Site Name: QueerCon
+ * Created:   August 2015
  * Author:    Joni Weiss, joniwebgirl.com
- *
- * Notes:     Built on top of Bootstrap 3.x
  ***************************************************************************/
 /************************************************
  GENERAL
@@ -60,8 +58,12 @@ img {
 .img-responsive {
     width: 100%;
     height: auto;
-    /*border-radius: 3rem;*/
-    /*border: solid 0.2rem #9e0704;*/
+    border-radius: 3px;
+    border: solid 0.2rem #a349a4;
+}
+
+#header-img {
+    border-radius: 5px;
 }
 
 #wrapper {
@@ -95,10 +97,13 @@ body {
 
 .time-to {
     text-align: center;
-    color: #eee;  1rem}
+    color: #eee;
+    font-size: 1rem;
+}
 
 .time-to.wrap.row {
     max-width: 100%;
+    border-bottom: solid #000 2px;
 }
 
 .time-to span {
@@ -204,7 +209,7 @@ a.back-to-top {
     z-index: 999;
     right: 1%;
     bottom: 5%;
-    background: #2aabd2 url("../assets/up-arrow.png") no-repeat center 43%;
+    background: #2aabd2 url("../img/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
