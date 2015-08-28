@@ -1,1 +1,1 @@
-# jitterbug
+# Queer Continuum Conference
