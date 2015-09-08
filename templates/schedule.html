@@ -1,0 +1,103 @@
+<div ng-controller="workshopsCtrl">
+    <div>
+        <h2 class="text-center">Conference Schedule</h2>
+    </div>
+</div>
+<div class="row" data-equalizer>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Registration & Breakfast</div>
+            <div class="col room">Room</div>
+            <div class="note">09:00 AM - 09:40 AM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Registration & Breakfast</div>
+            <div class="col room">Main Hallway</div>
+            <div class="note"> </div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Welcome Message</div>
+            <div class="col room">Room</div>
+            <div class="note">09:40 AM - 09:55 AM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Welcome Message & Orientation</div>
+            <div class="col room">Auditorium</div>
+            <div class="note"> </div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Session 1</div>
+            <div class="col room">Room</div>
+            <div class="note">10:00 AM - 11:00 AM</div>
+        </div>
+        <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "1"'>
+            <div class="title">{{item.title}}</div>
+            <div class="col room">{{item.room}}</div>
+            <div class="note" ng-if="item.note != ''">{{item.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Session 2</div>
+            <div class="col room">Room</div>
+            <div class="note">11:15 AM - 12:15 PM</div>
+        </div>
+        <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "2"'>
+            <div class="title">{{item.title}}</div>
+            <div class="col room">{{item.room}}</div>
+            <div class="note" ng-if="item.note != ''">{{item.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Lunch</div>
+            <div class="col room">Room</div>
+            <div class="note">12:15 PM - 01:15 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Lunch</div>
+            <div class="col room">Lunch room</div>
+            <div class="note">* Gluten-free, Vegan, and Vegetarian options available.</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Keynote Address with Lisa Diamond, Ph.D</div>
+            <div class="col room">Room</div>
+            <div class="note">01:30 PM - 02:30 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Keynote & First raffle</div>
+            <div class="col room">Auditorium</div>
+            <div class="note">Keynote followed by First of two raffles.</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Session 3</div>
+            <div class="col room">Room</div>
+            <div class="note">02:45 PM - 03:45 PM</div>
+        </div>
+        <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "3"'>
+            <div class="title">{{item.title}}</div>
+            <div class="col room">{{item.room}}</div>
+            <div class="note" ng-if="item.note != ''">{{item.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Wrap-up & Second Raffle</div>
+            <div class="col room">Room</div>
+            <div class="note">03:45 PM - 04:00 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Wrap-up & Second Raffle</div>
+            <div class="col room">Auditorium</div>
+            <div class="note"> </div>
+        </div>
+    </div>
+</div>

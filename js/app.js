@@ -20,7 +20,12 @@ app.config(
         .state('workshops', {
             url: "/workshops",
             templateUrl: 'templates/workshops.html',
-            controller: 'DefaultCtrl'
+            controller: 'workshopsCtrl'
+        })
+        .state('schedule', {
+            url: "/schedule",
+            templateUrl: 'templates/schedule.html',
+            controller: 'workshopsCtrl'
         })
         .state('presenters', {
             url: "/presenters",
@@ -145,8 +150,8 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
 
 app.controller('workshopsCtrl', ['$scope', '$http', 'smoothScroll',
   function($scope, $http, smoothScroll) {
-    $http.get('js/beverages.json').success(function(data) {
-      $scope.beverages = data;
+    $http.get('js/workshops.json').success(function(data) {
+      $scope.workshops = data;
       $scope.oneAtATime = true;
     });
     var element = document.getElementById('scrollTop');
