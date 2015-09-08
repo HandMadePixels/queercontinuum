@@ -80,7 +80,8 @@ app.factory('Util', [function () {
             return [
                 days + 'd',
                 hours + 'h',
-                minutes + 'm'
+                minutes + 'm',
+                seconds + 's'
             ].join(' ');
         }
     };
