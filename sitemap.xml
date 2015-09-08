@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://jitterbugcoffeehop.com/</loc>
+        <loc>http://queercon.xyz/</loc>
     </url>
     <url>
-        <loc>http://www.jitterbugcoffeehop.com/index.html</loc>
+        <loc>http://queercon.xyz/index.html</loc>
     </url>
     <url>
-        <loc>http://jitterbugcoffeehop.com/index.html#/beveragesMenu</loc>
+        <loc>http://queercon.xyz/index.html#/workshops</loc>
     </url>
     <url>
-        <loc>http://jitterbugcoffeehop.com/index.html#/foodMenu</loc>
+        <loc>http://queercon.xyz/index.html#/schedule</loc>
     </url>
     <url>
-        <loc>http://jitterbugcoffeehop.com/index.html#/maptoUs</loc>
+        <loc>http://queercon.xyz/index.html#/presenters</loc>
     </url>
     <url>
-        <loc>http://jitterbugcoffeehop.com/index.html#/aboutUs</loc>
+        <loc>http://queercon.xyz/index.html#/sponsors</loc>
     </url>
     <url>
+        <loc>http://queercon.xyz/index.html#/committee</loc>
+    </url>
     <url>
-        <loc>http://jitterbugcoffeehop.com/index.html</loc>
+        <loc>http://queercon.xyz/index.html</loc>
     </url>
 </urlset>
