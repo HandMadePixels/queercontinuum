@@ -3,3 +3,110 @@
         <h2 class="text-center">Workshops</h2>
     </div>
 </div>
+<div class="row" data-equalizer>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Registration and Breakfast</div>
+            <div class="meta-data">
+                <div class="col start">Start: 09:00 AM</div>
+                <div class="col end">End: 09:40 AM</div>
+                <div class="col room">Room: Main hallway area</div>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="title">Registration and Breakfast</div>
+            <div class="meta-data">
+                <div class="col start">09:00 AM</div>
+                <div class="col end">09:40 AM</div>
+                <div class="col room">Entry/Hallway</div>
+            </div>
+            <div class="note">Registration, Program information, light breakfast offered. </div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Welcome Message</div>
+            <div class="meta-data">
+                <div class="col start">Start</div>
+                <div class="col end">End</div>
+                <div class="col room">Room</div>
+            </div>
+        </div>
+        <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "tea"'>
+            <div class="title">{{beverage.name}}</div>
+            <div class="meta-data">
+                <div class="col price12">{{beverage.size12}}</div>
+                <div class="col price16">{{beverage.size16}}</div>
+                <div class="col price20">{{beverage.size20}}</div>
+                <div class="col price24">{{beverage.size24}}</div>
+            </div>
+            <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Shakes</div>
+            <div class="meta-data">
+                <div class="col price12">12 oz</div>
+                <div class="col price16">16 oz</div>
+                <div class="col price20">20 oz</div>
+                <div class="col price24">24 oz</div>
+            </div>
+        </div>
+        <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "shake"'>
+            <div class="title">{{beverage.name}}</div>
+            <div class="meta-data">
+                <div class="col price12">{{beverage.size12}}</div>
+                <div class="col price16">{{beverage.size16}}</div>
+                <div class="col price20">{{beverage.size20}}</div>
+                <div class="col price24">{{beverage.size24}}</div>
+            </div>
+            <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
+        </div>
+    </div>
+    <img class="img-responsive menu-image show-for-large-up" src="assets/beverage.jpg" alt="JitterBug Beverages -- go to menu.">
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Blended Ice</div>
+            <div class="meta-data">
+                <div class="col price12">12 oz</div>
+                <div class="col price16">16 oz</div>
+                <div class="col price20">20 oz</div>
+                <div class="col price24">24 oz</div>
+            </div>
+        </div>
+        <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "blended-ice"'>
+            <div class="title">{{beverage.name}}</div>
+            <div class="meta-data">
+                <div class="col price12">{{beverage.size12}}</div>
+                <div class="col price16">{{beverage.size16}}</div>
+                <div class="col price20">{{beverage.size20}}</div>
+                <div class="col price24">{{beverage.size24}}</div>
+            </div>
+            <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Other Drinks</div>
+            <div class="meta-data">
+                <div class="col price12">12 oz</div>
+                <div class="col price16">16 oz</div>
+                <div class="col price20">20 oz</div>
+                <div class="col price24">24 oz</div>
+            </div>
+        </div>
+        <div class="table-row" ng-repeat="beverage in beverages" ng-if='beverage.type == "other"'>
+            <div class="title">{{beverage.name}}</div>
+            <div class="meta-data">
+                <div class="col price12">{{beverage.size12}}</div>
+                <div class="col price16">{{beverage.size16}}</div>
+                <div class="col price20">{{beverage.size20}}</div>
+                <div class="col price24">{{beverage.size24}}</div>
+            </div>
+            <div class="note" ng-if="beverage.note != ''">{{beverage.note}}</div>
+        </div>
+    </div>
+    <h4>Latte, Steamer, and Italian Soda Flavors (25 cents extra):</h4>
+    <p>Vanilla, Hazelnut, Amaretto, Caramel, Almond, Mint, Orange, Raspberry, Cherry, Toasted Marshmallow, Mango, Lime, Blackberry, Lemon, Boysenberry, Peach, Blueberry, Strawberry, Coconut, Tiramisu, Almond Roca, Butterscotch, Cinnamon, Pumpkin Spice, Butter Rum & Irish Cream.</p>
+</div>

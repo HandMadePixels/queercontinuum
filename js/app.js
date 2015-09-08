@@ -75,8 +75,7 @@ app.factory('Util', [function () {
             return [
                 days + 'd',
                 hours + 'h',
-                minutes + 'm',
-                seconds + 's'
+                minutes + 'm'
             ].join(' ');
         }
     };
