@@ -1,83 +1,74 @@
 [
     {
-        "title": "Polyamory & Monogamy",
-        "description": "description tbd",
-        "presenter": "presenter tbd",
+        "title": "Oh, the relationships you'll have!    ",
+        "summary": "A panel discussion on the spectrum of relationship models from monogamy to polyamory.",
+        "presenter": "Panelists: Jessie Russell, Isaac Furniss, Jodi Bingham, \"Jandy\" Stelter, Andy Rivera",
         "session": "1",
-        "room": "room-tbd",
-        "image": "",
+        "room": "A12",
         "note": ""
     },
     {
         "title": "Youth",
-        "description": "description tbd",
+        "summary": "summary tbd",
         "presenter": "presenter tbd",
         "session": "1",
-        "room": "room-tbd",
-        "image": "",
+        "room": "A10",
         "note": ""
     },
     {
-        "title": "People of Color",
-        "description": "description tbd",
-        "presenter": "presenter tbd",
+        "title": "Undocumented & Queer: Exploring The intersectionalities in our movements",
+        "summary": "Utah’s Familia: Trans Queer Liberation Movement is committed to the liberation of every LGBTQ Latin@ and has been raising awareness throughout Salt Lake City. This workshop will look at the intersectionalities between these already marginalized communities and how we can better empower our communities.",
+        "presenter": "Ella Mendoza, Representative of Trans Queer Liberation Movement",
         "session": "1",
-        "room": "room-tbd",
-        "image": "",
+        "room": "Faculty Lounge",
         "note": ""
     },
     {
-        "title": "Activism",
-        "description": "description tbd",
-        "presenter": "presenter tbd",
+        "title": "Activism 101: Lobbying is Not a Dirty Word",
+        "summary": "This workshop will discuss the differences, the connections, and the overlap betwwen being an activist, an advocate, and a strategist. Using these definitions we will work on techniques that will help everyone be the best citizen lobbyist they can be with the skills that work best for them.",
+        "presenter": "Shauna Brock, an SLC based writer/activist and founder of the 1-5 Club. She's worked with BiNet USA in Austen and spoke about the need for awareness for the B+ Community at the Dyke/Bi/Poly/Trans* March at UtahPride",
         "session": "2",
-        "room": "room-tbd",
-        "image": "",
+        "room": "A10",
         "note": ""
     },
     {
         "title": "Safe Sex",
-        "description": "description tbd",
+        "summary": "summary tbd",
         "presenter": "presenter tbd",
         "session": "2",
-        "room": "room-tbd",
-        "image": "",
+        "room": "A12",
         "note": ""
     },
     {
-        "title": "Disabilities",
-        "description": "description tbd",
-        "presenter": "presenter tbd",
+        "title": "This is How We Do It: The Reality of Sex and Disability",
+        "summary": "We will be discussing various sex and disability topics such as resources, how to have \"the talk\" and ask the right questions, breaking through assumptions, and why this issue is important.",
+        "presenter": "Erica Head, bisexual writer and artist born with spina bifida and creator of Sexability, a blog focused on sex and disability related topics. disabilitysexy.wordpress.com",
         "session": "2",
-        "room": "room-tbd",
-        "image": "",
+        "room": "Faculty Lounge",
         "note": ""
     },
     {
         "title": "Mental Health",
-        "description": "description tbd",
+        "summary": "summary tbd",
         "presenter": "presenter tbd",
         "session": "3",
-        "room": "room-tbd",
-        "image": "",
+        "room": "A10",
         "note": ""
     },
     {
         "title": "Trans*",
-        "description": "description tbd",
+        "summary": "summary tbd",
         "presenter": "presenter tbd",
         "session": "3",
-        "room": "room-tbd",
-        "image": "",
+        "room": "Faculty Lounge",
         "note": ""
     },
     {
-        "title": "B+ 101",
-        "description": "description tbd",
-        "presenter": "presenter tbd",
+        "title": "Queer Trans 101",
+        "summary": "This workshop will break down various queer identities, how we can help empower each other.",
+        "presenter": "Kira Kiko Lian—Training Coordinator at the LGBT Resource Center",
         "session": "3",
-        "room": "room-tbd",
-        "image": "",
-        "note": ""
+        "room": "A12",
+        "note": "Since 2002, the LGBT Resource Center has been providing resources and create safe spaces for LGBT students, and educating the community at large on why these spaces are important."
     }
 ]

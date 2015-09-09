@@ -273,12 +273,10 @@ a:hover.back-to-top {
 
 div .table-row-hr {
     background-color: #247cbd;
-    color: #eee;
     margin-top: 2em;
     padding-top: 1em;
     min-width: 95%;
     border: solid 0.2rem #1d1a8b;
-    color: #eee;
 }
 
 .table-row *,
@@ -287,42 +285,25 @@ div .table-row-hr {
     vertical-align: middle;
 }
 
-.table-row .title,
-.table-row-hr .title {
+div .title {
     min-width: 40%;
     min-width: calc(100% - 12em);
-    font-size: 1em;
-    font-weight: normal;
 }
 
-.table-row-hr .title {
-    font-weight: 700;
-}
-
-div .title {
+div .title,
+div .meta-data {
     padding: 0.5em 0.5em 0 0.5em;
 }
 
-div .note,
-div .meta-data {
+div .note
+div .summary,
+div .presenter {
     padding: 0 0.5em 0.5em 0.5em;
 }
 
 .table-row .title, {
     display: block;
     clear: left;
-}
-
-.table-row .price,
-.table-row .start,
-.table-row .end,
-.table-row .room,
-.table-row-hr .price,
-.table-row-hr .start,
-.table-row-hr .end,
-.table-row-hr .room {
-    text-align: right;
-    font-size: 1em;
 }
 
 .table-row {
@@ -334,34 +315,47 @@ div .meta-data {
   position: relative;
 }
 
-.table-row .note,
-.table-row-hr .note,
+div .note,
 .table-row .meta-data > * {
     display: inline-block;
 }
 
-.price,
-.table-row .meta-data > *,
-.table-row-hr .meta-data > * {
+div .meta-data > * {
   min-width: 4em;
   padding: 0 0.5rem;
   cursor: pointer;
 }
 
+.table-row-hr .title,
+.table-row-hr .session,
+.table-row-hr .room,
 .table-row-hr .note,
-.table-row-hr .price,
+.table-row-hr .summary,
+.table-row-hr .presenter,
 .table-row-hr .start,
-.table-row-hr .end,
-.table-row-hr .room {
+.table-row-hr .end {
     color: #eee;
+    font-size: 1em;
+    font-weight: 700;
 }
 
-.table-row .note,
-.table-row .price,
-.table-row .start,
-.table-row .end,
+.table-row .title,
+.table-row .session,
 .table-row .room {
-  color: #1d1a8b;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.table-row .note,
+.table-row .summary,
+.table-row .presenter,
+.table-row .start,
+.table-row .end {
+    color: #222;
+    font-size: 0.8em;
+    font-weight: normal;
 }
 
 /**********************************
@@ -387,6 +381,8 @@ div .meta-data {
     }
 
     div .note,
+    div .summary,
+    div .presenter,
     div .meta-data {
         padding: 0 1em 1em 1em;
     }
@@ -395,8 +391,7 @@ div .meta-data {
         border-bottom: thin dotted #2aabd2;
     }
 
-    .table-row .title,
-    .table-row-hr .title {
+    div .title {
         min-width: 65%;
         min-width: calc(100% - 22em);
         font-size: 1em;
@@ -414,32 +409,23 @@ div .meta-data {
         color: #eee;
     }
 
-    .table-row-hr .title {
-        font-weight: 700;
-    }
-
     .table-row .title {
-      /*padding: 1rem;*/
       display: inline-block;
       clear: left;
     }
 
-    div .note,
-    .table-row .note,
-    .table-row-hr .note {
+    div .summary,
+    div .presenter,
+    div .note {
         width: 100%;
     }
 
-    .table-row .meta-data,
-    .table-row-hr .meta-data {
-      width: 35em;
+    div .meta-data {
+        width: 20em;
     }
 
-    .table-row .meta-data > *,
-    .table-row-hr .meta-data > * {
-        width: 10em;
-        /*padding: 0 0.5rem;*/
-        /*cursor: pointer;*/
+    div .meta-data > * {
+        width: 8em;
         display: inline-block;
     }
 }

@@ -9,9 +9,9 @@
             <div class="title">Workshops</div>
             <div class="meta-data">
                 <div class="col session">Session</div>
-                <div class="col room">room</div>
+                <div class="col room">Room</div>
             </div>
-            <div class="description">Description</div>
+            <div class="summary">Summary</div>
             <div class="presenter">Presenter</div>
         </div>
         <div class="table-row" ng-repeat="item in workshops">
@@ -20,8 +20,8 @@
                 <div class="col session">{{item.session}}</div>
                 <div class="col room">{{item.room}}</div>
             </div>
-            <div class="description">{{item.description}}</div>
-            <div class="presenter">{{item.presenter}}</div>
+            <div class="summary">Summary: {{item.summary}}</div>
+            <div class="presenter">Presenter: {{item.presenter}}</div>
             <div class="note" ng-if="item.note != ''">{{item.note}}</div>
         </div>
     </div>
