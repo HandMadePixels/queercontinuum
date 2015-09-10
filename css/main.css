@@ -105,6 +105,24 @@ img {
     border: solid 0.2rem #1d1a8b;
 }
 
+.img-responsive-2 {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    border: solid 0.2rem #1d1a8b;
+}
+
+.bio-image {
+    border-radius: 3px;
+    border: solid 0.2rem #1d1a8b;
+    float: left;
+    margin: 0 1rem;
+}
+
+.bio-text {
+    padding: 0 1rem;
+}
+
 #header-img {
     border-radius: 5px;
 }

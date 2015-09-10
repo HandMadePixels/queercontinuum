@@ -10,13 +10,14 @@ app.config(
     [         '$stateProvider', '$urlRouterProvider',
       function($stateProvider, $urlRouterProvider) {
       // // For any unmatched url, send to /route1
-      $urlRouterProvider.otherwise("/");
+      $urlRouterProvider.otherwise("/#");
 
       $stateProvider
         .state('home', {
             url: "/",
-            templateUrl: "templates/home.html"
-        })
+            templateUrl: "templates/home.html",
+            controller: 'MainCtrl'
+          })
         .state('workshops', {
             url: "/workshops",
             templateUrl: 'templates/workshops.html',
@@ -27,14 +28,14 @@ app.config(
             templateUrl: 'templates/schedule.html',
             controller: 'workshopsCtrl'
         })
-        .state('presenters', {
-            url: "/presenters",
-            templateUrl: 'templates/presenters.html',
+        .state('keynote', {
+            url: "/keynote",
+            templateUrl: 'templates/keynote.html',
             controller: 'DefaultCtrl'
         })
-        .state('sponsors', {
-            url: "/sponsors",
-            templateUrl: "templates/sponsors.html",
+        .state('map', {
+            url: "/map",
+            templateUrl: "templates/map.html",
             controller: 'DefaultCtrl'
         })
         .state('aboutUs', {
@@ -96,7 +97,9 @@ app.directive('backToTop', [function() {
         template: '<a href="#" class="back-to-top">Back to Top</a>',
         link: function(scope, element) {
 
-            var amountScrolled = Math.round(screen.height * 0.5);
+            //var amountScrolled = Math.round(screen.height * 0.5);
+            var amountScrolled = Math.round(screen.height * 0.69);
+
 
             scope.button = element.find('button');
 
