@@ -167,39 +167,6 @@ app.controller('workshopsCtrl', ['$scope', '$http', 'smoothScroll',
   }
 ]);
 
-app.controller('FoodCtrl', ['$scope', '$http', 'smoothScroll',
-  function($scope, $http, smoothScroll) {
-    $http.get('js/foodmenu.json').success(function(data) {
-      $scope.foodmenu = data;
-    });
-    var element = document.getElementById('scrollTop');
-    var options = {
-        duration: 700,
-        easing: 'easeInQuad',
-    };
-    smoothScroll(element, options);  }
-]);
-
-app.controller('MapCtrl', ['$scope', 'smoothScroll',
-  function($scope, smoothScroll) {
-    var element = document.getElementById('scrollTop');
-    var options = {
-        duration: 700,
-        easing: 'easeInQuad',
-    };
-    smoothScroll(element, options);  }
-]);
-
-app.controller('AboutCtrl', ['$scope', 'smoothScroll',
-  function($scope, smoothScroll) {
-    var element = document.getElementById('scrollTop');
-    var options = {
-        duration: 700,
-        easing: 'easeInQuad',
-    };
-    smoothScroll(element, options);  }
-]);
-
 app.controller('MainCtrl', ['$scope',
     function ($scope) {
       $scope.message = "Welcome to JitterBug";

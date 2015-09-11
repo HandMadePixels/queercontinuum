@@ -11,8 +11,8 @@
                 <div class="col session">Session</div>
                 <div class="col room">Room</div>
             </div>
-            <div class="summary">Summary</div>
-            <div class="presenter">Presenter</div>
+            <!--<div class="summary">Summary</div>-->
+            <!--<div class="presenter">Presenter</div>-->
         </div>
         <div class="table-row" ng-repeat="item in workshops">
             <div class="title">{{item.title}}</div>
@@ -20,8 +20,8 @@
                 <div class="col session">{{item.session}}</div>
                 <div class="col room">{{item.room}}</div>
             </div>
-            <div class="summary">Summary: {{item.summary}}</div>
-            <div class="presenter">Presenter: {{item.presenter}}</div>
+            <div class="summary"><strong>Summary:</strong> {{item.summary}}</div>
+            <div class="presenter"><strong>Presenter:</strong> {{item.presenter}}</div>
             <div class="note" ng-if="item.note != ''">{{item.note}}</div>
         </div>
     </div>

@@ -291,8 +291,8 @@ a:hover.back-to-top {
 
 div .table-row-hr {
     background-color: #247cbd;
-    margin-top: 2em;
-    padding-top: 1em;
+    margin-top: 1.5em;
+    padding-top: 0.25em;
     min-width: 95%;
     border: solid 0.2rem #1d1a8b;
 }
@@ -309,11 +309,12 @@ div .title {
 }
 
 div .title,
+div .room,
 div .meta-data {
     padding: 0.5em 0.5em 0 0.5em;
 }
 
-div .note
+div .note,
 div .summary,
 div .presenter {
     padding: 0 0.5em 0.5em 0.5em;
@@ -352,9 +353,9 @@ div .meta-data > * {
 .table-row-hr .presenter,
 .table-row-hr .start,
 .table-row-hr .end {
-    color: #eee;
+    color: #ddd;
     font-size: 1em;
-    font-weight: 700;
+    /*font-weight: bold;*/
 }
 
 .table-row .title,
@@ -362,7 +363,7 @@ div .meta-data > * {
 .table-row .room {
     color: #000;
     font-size: 1em;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 
