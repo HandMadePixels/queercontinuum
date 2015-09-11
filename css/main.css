@@ -82,10 +82,17 @@ a {
     color: #222;
 }
 
+p {
+    margin: 1em;
+}
 #site-name {
     font-size: 2.125rem;
     font-weight: bold;
     line-height: 1.8;
+    font-family: 'djb_jennaregular', Arial, sans-serif;
+}
+
+.jenna-text {
     font-family: 'djb_jennaregular', Arial, sans-serif;
 }
 
@@ -174,40 +181,6 @@ body {
 /**********************************
 NAVIGATION
 ***********************************/
-
-/*.menu {*/
-    /*display: block;*/
-    /*margin: 0.5rem auto;*/
-    /*text-align: center;*/
-/*}*/
-
-/*a.small.round.button,*/
-/*a.small.round.button.secondary {*/
-    /*margin: 1rem auto;*/
-/*}*/
-
-/*div a.button {*/
-    /*border: solid 0.2rem #9e0704;*/
-    /*background: #2aabd2;*/
-    /*/!*font-size: 0.75em;*!/*/
-    /*font-weight: bold;*/
-    /*color: #000;*/
-    /*text-transform: capitalize;*/
-    /*padding: 1.563em 1.563em;*/
-    /*width: 100%;*/
-    /*max-width: 20rem;*/
-/*}*/
-
-/*div a.button.secondary {*/
-    /*border: solid 0.2rem #9e0704;*/
-    /*background: #eee;*/
-/*}*/
-
-/*div .button:hover,*/
-/*div .button:active {*/
-    /*background: #2aabd2;*/
-/*}*/
-
 .open-close {
     background-color: #2aabd2;
     font-weight: bold;
@@ -395,15 +368,17 @@ div .meta-data > * {
         right: 7.1%;
     }
 
-    div .title {
-        padding: 1em;
+    div .title,
+    div .room,
+    div .meta-data {
+        padding: 1em 1em 1em 1.5em;
     }
 
     div .note,
     div .summary,
     div .presenter,
     div .meta-data {
-        padding: 0 1em 1em 1em;
+        padding: 0 1em 1em 1.5em;
     }
 
     .table-row .title {
