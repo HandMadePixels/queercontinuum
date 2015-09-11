@@ -97,8 +97,7 @@ app.directive('backToTop', [function() {
         template: '<a href="#" class="back-to-top">Back to Top</a>',
         link: function(scope, element) {
 
-            //var amountScrolled = Math.round(screen.height * 0.5);
-            var amountScrolled = Math.round(screen.height * 0.69);
+            var amountScrolled = Math.round(screen.height * 0.5);
 
 
             scope.button = element.find('button');
@@ -144,10 +143,11 @@ app.directive('copyrightString', function() {
 
 app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
   function($scope, smoothScroll) {
-    var element = document.getElementById('scrollTop');
+    var element = document.getElementById('scrollToHere');
     var options = {
         duration: 700,
-        easing: 'easeInQuad',
+        offset: 35,
+        easing: 'easeInQuad'
     };
     smoothScroll(element, options);  }
 ]);
@@ -158,10 +158,11 @@ app.controller('workshopsCtrl', ['$scope', '$http', 'smoothScroll',
       $scope.workshops = data;
       $scope.oneAtATime = true;
     });
-    var element = document.getElementById('scrollTop');
+    var element = document.getElementById('scrollToHere');
     var options = {
         duration: 700,
-        easing: 'easeInQuad',
+        offset: 35,
+        easing: 'easeInQuad'
     };
     smoothScroll(element, options);
   }
@@ -170,4 +171,5 @@ app.controller('workshopsCtrl', ['$scope', '$http', 'smoothScroll',
 app.controller('MainCtrl', ['$scope',
     function ($scope) {
       $scope.message = "Welcome to JitterBug";
-    }]);
+    }
+]);
