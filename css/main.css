@@ -143,8 +143,8 @@ img {
 }
 
 .site-content {
-  background-color: #885FAE;
-  max-width: 100%;
+    background-color: #E6E6FA;
+    max-width: 100%;
   margin: 0 auto;
   /*padding: 0 1%;*/
 }
