@@ -1,0 +1,109 @@
+<div ng-controller="workshopsCtrl">
+    <div>
+        <h2 class="text-center jenna-text">Conference Schedule</h2>
+    </div>
+</div>
+<div class="row" data-equalizer>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Registration & Breakfast</div>
+            <div class="room">Room</div>
+            <div class="note">09:00 AM - 09:40 AM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Registration & Breakfast</div>
+            <div class="room">Main Hallway</div>
+            <div class="note"> </div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Welcome Adress</div>
+            <div class="room">Room</div>
+            <div class="note">09:40 AM - 10:00 AM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Welcome Address & Orientation</div>
+            <div class="room">Commons Area</div>
+            <div class="note"> </div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Session 1</div>
+            <div class="room">Room</div>
+            <div class="note">10:00 AM - 11:00 AM</div>
+        </div>
+        <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "1"'>
+            <div class="title">{{item.title}}</div>
+            <div class="room">{{item.room}}</div>
+            <div class="summary"><strong>Summary:</strong> {{item.summary}}</div>
+            <div class="presenter"><strong>Presenter:</strong> {{item.presenter}}</div>
+            <div class="note" ng-if="item.note != ''">{{item.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Session 2</div>
+            <div class="room">Room</div>
+            <div class="note">11:15 AM - 12:15 PM</div>
+        </div>
+        <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "2"'>
+            <div class="title">{{item.title}}</div>
+            <div class="room">{{item.room}}</div>
+            <div class="summary">Summary: {{item.summary}}</div>
+            <div class="presenter">Presenter: {{item.presenter}}</div>
+            <div class="note" ng-if="item.note != ''">{{item.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Lunch</div>
+            <div class="room">Room</div>
+            <div class="note">12:15 PM - 01:15 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Lunch</div>
+            <div class="room">Cafeteria</div>
+            <div class="note">* Gluten-free, Vegan, and Vegetarian options available.</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Keynote Address with Mary Stanley, ACMHC, ATR-BC, ATCS</div>
+            <div class="room">Room</div>
+            <div class="note">01:30 PM - 02:30 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Keynote & First raffle</div>
+            <div class="room">Commons Area</div>
+            <div class="note">Keynote followed by First of two raffles.</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Session 3</div>
+            <div class="room">Room</div>
+            <div class="note">02:45 PM - 03:45 PM</div>
+        </div>
+        <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "3"'>
+            <div class="title">{{item.title}}</div>
+            <div class="room">{{item.room}}</div>
+            <div class="summary">Summary: {{item.summary}}</div>
+            <div class="presenter">Presenter: {{item.presenter}}</div>
+            <div class="note" ng-if="item.note != ''">{{item.note}}</div>
+        </div>
+    </div>
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Farewell Message</div>
+            <div class="room">Room</div>
+            <div class="note">03:45 PM - 04:00 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Farewell Message & Second Raffle</div>
+            <div class="room">Commons area</div>
+            <div class="note"> </div>
+        </div>
+    </div>
+</div>
