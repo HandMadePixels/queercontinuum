@@ -78,13 +78,8 @@ body {
     padding: 1em;
 }
 
-a,
-a:visited {
+a {
     color: #222;
-}
-
-a:hover {
-    color: #885ead;
 }
 
 p {
@@ -99,7 +94,6 @@ p {
 
 .jenna-text {
     font-family: 'djb_jennaregular', Arial, sans-serif;
-    padding-top: 0.5rem;
 }
 
 footer {
@@ -167,7 +161,6 @@ body {
     margin: 0;
     width: 100%;
     line-height: normal;
-    padding-top: 0.25rem;
 }
 
 .time-to {
