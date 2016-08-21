@@ -42,6 +42,11 @@ app.config(
             url: "/aboutUs",
             templateUrl: "templates/about.html",
             controller: 'DefaultCtrl'
+        })
+        .state('photos', {
+            url: "/photos",
+            templateUrl: "templates/photos.html",
+            controller: 'DefaultCtrl'
         });
       }
     ]
@@ -60,6 +65,7 @@ app.directive('countdown', [
                 $interval(function () {
                     var diff;
                     diff = Math.floor((future.getTime() - new Date().getTime()) / 1000);
+                    console.log(diff);
                     return element.text(Util.dhms(diff));
                 }, 1000);
             }
@@ -152,11 +158,16 @@ app.controller('DefaultCtrl', ['$scope', 'smoothScroll',
     smoothScroll(element, options);  }
 ]);
 
-app.controller('workshopsCtrl', ['$scope', '$http', 'smoothScroll',
-  function($scope, $http, smoothScroll) {
+app.controller('workshopsCtrl', ['$scope', '$filter', '$http', 'smoothScroll',
+  function($scope, $filter, $http, smoothScroll) {
     $http.get('js/workshops.json').success(function(data) {
+      var orderBy = $filter('orderBy');
       $scope.workshops = data;
       $scope.oneAtATime = true;
+      $scope.order = function(predicate, reverse) {
+            $scope.workshops = orderBy($scope.workshops, predicate, reverse);
+      };
+      $scope.order('-age',false);
     });
     var element = document.getElementById('scrollToHere');
     var options = {

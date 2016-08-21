@@ -71,15 +71,20 @@ body {
     radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
     radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
     radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
-    linear-gradient(45deg, #8b1a89 0%, #551a8b 20%, #551a8b 40%, #551a8b 60%, #551a8b 80%, #1d1a8b 100%);
+    linear-gradient(45deg, #8b1a89 0%, #551a8b 20%, #551a8b 40%, #551a8b 60%, #551a8b 75%, #1d1a8b 100%);
     background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
     background-color: #885ead;
 
     padding: 1em;
 }
 
-a {
+a,
+a:visited {
     color: #222;
+}
+
+a:hover {
+    color: #885ead;
 }
 
 p {
@@ -94,6 +99,7 @@ p {
 
 .jenna-text {
     font-family: 'djb_jennaregular', Arial, sans-serif;
+    padding-top: 0.5rem;
 }
 
 footer {
@@ -143,7 +149,7 @@ img {
 }
 
 .site-content {
-  background-color: #885ead;
+  background-color: #885FAE;
   max-width: 100%;
   margin: 0 auto;
   /*padding: 0 1%;*/
@@ -157,10 +163,11 @@ body {
  CSS for countdown timer
 ***********************************/
 .wrap {
-    background: #885ead;
+    background: #885FAE;
     margin: 0;
     width: 100%;
     line-height: normal;
+    padding-top: 0.25rem;
 }
 
 .time-to {
