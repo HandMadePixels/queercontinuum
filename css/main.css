@@ -130,9 +130,9 @@ img {
     padding: 0 1rem;
 }
 
-#header-img {
-    border-radius: 5px;
-}
+/*#header-img {
+    border-radius: 3px;
+}*/
 
 #wrapper {
   background-color: #000;
@@ -167,6 +167,9 @@ body {
     text-align: center;
     /*color: #eee;*/
     font-size: 1rem;
+    /*border-radius: 3px;*/
+    border: solid 0.2rem #1d1a8b;
+
 }
 
 .time-to.wrap.row {
