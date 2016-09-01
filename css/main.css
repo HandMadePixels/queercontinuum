@@ -1,8 +1,8 @@
 /****************************************************************************
  * Business Name: Queer Continuum Conference
  * Site Name: QueerCon
- * Created:   August 2015
- * Author:    Joni Weiss, joniwebgirl.com
+ * Created:   August 2015-2016
+ * Author:    Joni Weiss, handmadepixels.com
  ***************************************************************************/
 /************************************************
  GENERAL
@@ -269,7 +269,7 @@ a:hover.back-to-top {
 }
 
 div .table-row-hr {
-    background-color: #247cbd;
+    background-color: #551a8b;
     margin-top: 1.5em;
     padding-top: 0.25em;
     min-width: 95%;
@@ -402,7 +402,7 @@ div .meta-data > * {
     div .table-row-hr {
         margin-top: 2em;
         padding-top: 1em;
-        background-color: #247cbd;
+        background-color: #551a8b;
         min-width: 45%;
         border-radius: 3px;
         border: solid 0.2rem #1d1a8b;
