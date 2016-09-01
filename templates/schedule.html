@@ -4,23 +4,27 @@
     </div>
 </div>
 <div class="row" data-equalizer>
+    <!--Begin Time Block 1 - Registration-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
             <div class="title">Registration</div>
             <div class="room">Room</div>
-            <div class="note">08:30 AM - 09:00 AM</div>
+            <div class="note">09:00 AM - 09:30 AM</div>
         </div>
         <div class="table-row">
             <div class="title">Registration</div>
-            <div class="room">Main Hallway</div>
+            <div class="room">Auditorium Entrance area</div>
             <div class="note"> </div>
         </div>
     </div>
+    <!--End Time Block 1 - Registration-->
+
+    <!--Begin Time Block 2 - Welcome Address & Orientation-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
             <div class="title">Welcome Address</div>
             <div class="room">Room</div>
-            <div class="note">09:00 AM - ? AM</div>
+            <div class="note">09:30 AM - 09:45 AM</div>
         </div>
         <div class="table-row">
             <div class="title">Welcome Address & Orientation</div>
@@ -28,11 +32,14 @@
             <div class="note"> </div>
         </div>
     </div>
+    <!--End Time Block 2 - Welcome Address & Orientation-->
+
+    <!--Begin Time Block 3 - Session 1-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
             <div class="title">Session 1</div>
             <div class="room">Room</div>
-            <div class="note">10:00 AM - 11:00 AM</div>
+            <div class="note">09:50 AM - 10:50 AM</div>
         </div>
         <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "1"'>
             <div class="title">{{item.title}}</div>
@@ -42,11 +49,44 @@
             <div class="note" ng-if="item.note != ''">{{item.note}}</div>
         </div>
     </div>
+    <!--End Time Block 3 - Session 1-->
+
+    <!--Begin Time Block 4 - Keynote-->
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Keynote Address with Ella Mendoza</div>
+            <div class="room">Room</div>
+            <div class="note">11:00 AM - 12:00 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Keynote Address</div>
+            <div class="room">Auditorium</div>
+            <div class="note"></div>
+        </div>
+    </div>
+    <!--End Time Block 4 - Keynote-->
+
+    <!--Begin Time Block 5 - Lunch-->
+    <div class="small-block-grid=1 large-block-grid=2">
+        <div class="table-row-hr">
+            <div class="title">Lunch</div>
+            <div class="room">Room</div>
+            <div class="note">12:00 PM - 01:00 PM</div>
+        </div>
+        <div class="table-row">
+            <div class="title">Lunch</div>
+            <div class="room">TBD</div>
+            <div class="note"></div>
+        </div>
+    </div>
+    <!--End Time Block 5 - Lunch-->
+
+    <!--Begin Time Block 6 - Session 2-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
             <div class="title">Session 2</div>
             <div class="room">Room</div>
-            <div class="note">11:15 AM - 12:15 PM</div>
+            <div class="note">01:00 PM - 02:00 PM</div>
         </div>
         <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "2"'>
             <div class="title">{{item.title}}</div>
@@ -56,35 +96,29 @@
             <div class="note" ng-if="item.note != ''">{{item.note}}</div>
         </div>
     </div>
+    <!--End Time Block 6 - Session 2-->
+
+    <!--Begin Time Block 7 - Break-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
-            <div class="title">Lunch</div>
+            <div class="title">Break</div>
             <div class="room">Room</div>
-            <div class="note">12:15 PM - 01:15 PM</div>
+            <div class="note">02:00 PM - 02:15 PM</div>
         </div>
         <div class="table-row">
-            <div class="title">Lunch</div>
-            <div class="room">Cafeteria</div>
-            <div class="note">* Gluten-free, Vegan, and Vegetarian options available.</div>
+            <div class="title">Break</div>
+            <div class="room">Library</div>
+            <div class="note"></div>
         </div>
     </div>
-    <div class="small-block-grid=1 large-block-grid=2">
-        <div class="table-row-hr">
-            <div class="title">Keynote Address with Mary Stanley, ACMHC, ATR-BC, ATCS</div>
-            <div class="room">Room</div>
-            <div class="note">01:30 PM - 02:30 PM</div>
-        </div>
-        <div class="table-row">
-            <div class="title">Keynote & First raffle</div>
-            <div class="room">Commons Area</div>
-            <div class="note">Keynote followed by First of two raffles.</div>
-        </div>
-    </div>
+    <!--End Time Block 7 - Break-->
+
+    <!--Begin Time Block 8 - Session 3-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
             <div class="title">Session 3</div>
             <div class="room">Room</div>
-            <div class="note">02:45 PM - 03:45 PM</div>
+            <div class="note">02:15 PM - 03:15 PM</div>
         </div>
         <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "3"'>
             <div class="title">{{item.title}}</div>
@@ -94,16 +128,20 @@
             <div class="note" ng-if="item.note != ''">{{item.note}}</div>
         </div>
     </div>
+    <!--Begin Time Block 8 - Session 3-->
+
+    <!--Begin Time Block 9 - Farewell-->
     <div class="small-block-grid=1 large-block-grid=2">
         <div class="table-row-hr">
             <div class="title">Farewell Message</div>
             <div class="room">Room</div>
-            <div class="note">03:45 PM - 04:00 PM</div>
+            <div class="note">03:30 PM - 04:00 PM</div>
         </div>
         <div class="table-row">
-            <div class="title">Farewell Message & Second Raffle</div>
-            <div class="room">Commons area</div>
+            <div class="title">Farewell Message</div>
+            <div class="room">Auditorium</div>
             <div class="note"> </div>
         </div>
     </div>
+    <!--End Time Block 9 - Farewell-->
 </div>
