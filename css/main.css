@@ -157,7 +157,7 @@ img {
  CSS for countdown timer row
 ***********************************/
 
-.time-to.wrap.row {
+.row-wrapper.row {
     margin: 0;
     width: 100%;
     background: #E6E6FA;
@@ -165,8 +165,6 @@ img {
     border-top: solid #000 2px;
     border-bottom: solid #000 2px;
     box-shadow: inset 0 0 1em #551a8b;
-    line-height: 1.5rem;
-    font-size: 1rem;
     text-align: center;
 }
 
@@ -413,11 +411,6 @@ div .meta-data > * {
     div .meta-data > * {
         width: 8em;
         display: inline-block;
-    }
-
-    .time-to.wrap.row {
-        line-height: 2.5rem;
-        font-size: 1.25rem;
     }
 }
 

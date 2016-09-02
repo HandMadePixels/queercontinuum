@@ -169,8 +169,14 @@ app.controller('workshopsCtrl', ['$scope', '$http', 'smoothScroll',
   }
 ]);
 
-app.controller('MainCtrl', ['$scope',
-    function ($scope) {
-      $scope.message = "Welcome to JitterBug";
-    }
+app.controller('MainCtrl', ['$scope', 'smoothScroll',
+    function ($scope, smoothScroll) {
+        $scope.message = "Welcome to QueerCon!";
+        var element = document.getElementById('scrollToTop');
+        var options = {
+            duration: 700,
+            offset: 35,
+            easing: 'easeInQuad'
+        };
+        smoothScroll(element, options);  }
 ]);

@@ -35,6 +35,8 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     </head>
     <body role="document" ng-controller="MainCtrl">
+        <div id="scrollToTop"></div>
+
         <div id="wrapper">
             <div>
                 <back-to-top></back-to-top>
@@ -52,7 +54,7 @@
 
                             <li class="name text-center">
                                 <h1>
-                                    <a id="site-name" ui-sref="home">
+                                    <a id="site-name" href="#/">
                                         QueerCon2016
                                     </a>
                                 </h1>
@@ -90,26 +92,22 @@
                              alt="Queer Continuum Conference - header image of logo">
                     </a>
                 </div>
-                <div class='time-to wrap row'>
+                <div class='row-wrapper row'>
                     <div class="medium-6 columns">
-                        <span>QueerCon begins in...</span>
-                        <span countdown='' date='September 24, 2016 09:00:00'></span>
+                        <p><span>QueerCon begins in...</span>
+                        <span countdown='' date='September 24, 2016 09:00:00'></span></p>
                     </div>
                     <div class="medium-6 columns">
                         <span>
-                            Registration opening soon!
+                            <p>Registration opening soon!</p>
                         </span>
                     </div>
-                    <!--                    <div class="show-for-large-up large-3 columns">
-                                            &lt;!&ndash; Go to www.addthis.com/dashboard to customize tools &ndash;&gt;
-                                            <div class="addthis_sharing_toolbox"></div>
-                                        </div>-->
                 </div>
             </header>
-            <div id="scrollToHere"></div>
             <!-- ***********************
                  Header (End)
             **************************** -->
+            <div id="scrollToHere"></div>
             <section ui-view-container class="site-content">
                 <div ui-view>
                 <!-- All Main Page Content will be placed here by the Angular UI.Router -->
@@ -119,6 +117,12 @@
                  Footer
             **************************** -->
             <footer class="site-content text-center">
+                <div class="row-wrapper row">
+                    <span><em>
+                        <p>We are committed to maintaining a safe and inclusive space. Please use inclusive language.</p>
+                        <p>Also, please avoid wearing strong scents. Enjoy the conference!</p>
+                    </em></span>
+                </div>
                 <div class="row">
                     <div class="small-12 medium-6 large-4 columns">
                         <p><strong>When</strong><br>
