@@ -168,6 +168,16 @@ img {
     text-align: center;
 }
 
+#btn-donate {
+    padding-bottom: 0.75rem;
+    padding-top: 1rem;
+}
+
+#btn-register {
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+}
+
 /**********************************
 NAVIGATION
 ***********************************/
