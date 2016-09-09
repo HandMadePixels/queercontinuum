@@ -42,7 +42,7 @@
                 <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "1"'>
                     <div class="title">{{item.title}}</div>
                     <div class="room">{{item.room}}</div>
-                    <div class="summary"><strong>Summary:</strong> {{item.summary}}</div>
+                    <div class="summary" ng-if="item.summary != ''"><strong>Summary:</strong> {{item.summary}}</div>
                     <div class="presenter"><strong>Presenter:</strong> {{item.presenter}}</div>
                     <div class="note" ng-if="item.note != ''">{{item.note}}</div>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "2"'>
                     <div class="title">{{item.title}}</div>
                     <div class="room">{{item.room}}</div>
-                    <div class="summary">Summary: {{item.summary}}</div>
+                    <div class="summary" ng-if="item.summary != ''">Summary: {{item.summary}}</div>
                     <div class="presenter">Presenter: {{item.presenter}}</div>
                     <div class="note" ng-if="item.note != ''">{{item.note}}</div>
                 </div>
@@ -121,7 +121,7 @@
                 <div class="table-row" ng-repeat="item in workshops" ng-if='item.session == "3"'>
                     <div class="title">{{item.title}}</div>
                     <div class="room">{{item.room}}</div>
-                    <div class="summary">Summary: {{item.summary}}</div>
+                    <div class="summary" ng-if="item.summary != ''">Summary: {{item.summary}}</div>
                     <div class="presenter">Presenter: {{item.presenter}}</div>
                     <div class="note" ng-if="item.note != ''">{{item.note}}</div>
                 </div>

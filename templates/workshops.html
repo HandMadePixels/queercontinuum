@@ -18,7 +18,7 @@
                         <div class="col session">{{item.session}}</div>
                         <div class="col room">{{item.room}}</div>
                     </div>
-                    <div class="summary"><strong>Summary:</strong> {{item.summary}}</div>
+                    <div class="summary" ng-if="item.summary != ''"><strong>Summary:</strong> {{item.summary}}</div>
                     <div class="presenter"><strong>Presenter:</strong> {{item.presenter}}</div>
                     <div class="note" ng-if="item.note != ''">{{item.note}}</div>
                 </div>
