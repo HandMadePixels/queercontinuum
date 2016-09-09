@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="QueerCon">
+<html ng-app="QueerCon" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     </head>
-    <body role="document" ng-controller="MainCtrl">
+    <body role="document" ng-controller="MainCtrl" id="bodyAnchor">
         <div id="scrollToTop"></div>
 
         <div id="wrapper">
@@ -74,7 +74,7 @@
 
                             <li class="name text-center">
                                 <h1>
-                                    <a id="site-name" href="#/">
+                                    <a id="site-name" href="#bodyAnchor">
                                         QueerCon2016
                                     </a>
                                 </h1>
@@ -207,6 +207,7 @@
         ____________________________________________________________________-->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-aria.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
         <script src="js/angular-smooth-scroll.js"></script>
 

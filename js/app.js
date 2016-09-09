@@ -2,6 +2,7 @@
  * Created by joniweiss on 7/24/15.
  */
 var app = angular.module("QueerCon", [
+    "ngAria",
     "ui.router",
     "smoothScroll"
     ]);
@@ -16,32 +17,38 @@ app.config(
         .state('home', {
             url: "/",
             templateUrl: "templates/home.html",
-            controller: 'MainCtrl'
+            controller: 'MainCtrl',
+            title: "Home"
           })
         .state('workshops', {
             url: "/workshops",
             templateUrl: 'templates/workshops.html',
-            controller: 'workshopsCtrl'
+            controller: 'workshopsCtrl',
+            title: "Workshops"
         })
         .state('schedule', {
             url: "/schedule",
             templateUrl: 'templates/schedule.html',
-            controller: 'workshopsCtrl'
+            controller: 'workshopsCtrl',
+            title: "Schedule"
         })
         .state('keynote', {
             url: "/keynote",
             templateUrl: 'templates/keynote.html',
-            controller: 'DefaultCtrl'
+            controller: 'DefaultCtrl',
+            title: "Keynote"
         })
         .state('map', {
             url: "/map",
             templateUrl: "templates/map.html",
-            controller: 'DefaultCtrl'
+            controller: 'DefaultCtrl',
+            title: "Map"
         })
         .state('aboutUs', {
             url: "/aboutUs",
             templateUrl: "templates/about.html",
-            controller: 'DefaultCtrl'
+            controller: 'DefaultCtrl',
+            title: "About QueerCon"
         });
       }
     ]
