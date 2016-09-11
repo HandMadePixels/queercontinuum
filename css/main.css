@@ -1,8 +1,8 @@
 /****************************************************************************
  * Business Name: Queer Continuum Conference
  * Site Name: QueerCon
- * Created:   August 2015
- * Author:    Joni Weiss, joniwebgirl.com
+ * Created:   August 2015-2016
+ * Author:    Joni Weiss, handmadepixels.com
  ***************************************************************************/
 /************************************************
  GENERAL
@@ -31,13 +31,13 @@
  */
 
 @font-face {
-    font-family: 'djb_jennaregular';
+/*    font-family: 'djb_jennaregular';
     src: url('../fonts/djb_jenna-webfont.eot');
     src: url('../fonts/djb_jenna-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/djb_jenna-webfont.woff2') format('woff2'),
     url('../fonts/djb_jenna-webfont.woff') format('woff'),
     url('../fonts/djb_jenna-webfont.ttf') format('truetype'),
-    url('../fonts/djb_jenna-webfont.svg#djb_jennaregular') format('svg');
+    url('../fonts/djb_jenna-webfont.svg#djb_jennaregular') format('svg');*/
     font-weight: normal;
     font-style: normal;
 
@@ -73,9 +73,11 @@ body {
     radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
     linear-gradient(45deg, #8b1a89 0%, #551a8b 20%, #551a8b 40%, #551a8b 60%, #551a8b 75%, #1d1a8b 100%);
     background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
-    background-color: #885ead;
+    background-color: #E6E6FA;
 
     padding: 1em;
+
+    margin: 0;
 }
 
 a {
@@ -85,6 +87,22 @@ a {
 p {
     margin: 1em;
 }
+
+#wrapper {
+    background-color: #000;
+    border-radius: 5px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0.5% 0.5%;
+}
+
+.site-content {
+    background-color: #E6E6FA;
+    max-width: 100%;
+    margin: 0 auto;
+    /*padding: 0 1%;*/
+}
+
 #site-name {
     font-size: 2.125rem;
     font-weight: bold;
@@ -101,6 +119,9 @@ footer {
     padding-bottom: 5rem
 }
 
+/********************************************
+    Classes for images
+*********************************************/
 img {
     max-width: 100%;
 }
@@ -108,74 +129,53 @@ img {
 .img-responsive {
     width: 100%;
     height: auto;
-    border-radius: 3px;
-    border: solid 0.2rem #1d1a8b;
+    border: solid 0.1rem #551a8b;
+    box-shadow: inset 0 0 1em #551a8b;
 }
 
-.img-responsive-2 {
+.home-images {
     width: 100%;
     height: auto;
     border-radius: 3px;
-    border: solid 0.2rem #1d1a8b;
+    border: solid 0.2rem #551a8b;
+    box-shadow: 10px 5px 5px black;
 }
 
 .bio-image {
-    border-radius: 3px;
-    border: solid 0.2rem #1d1a8b;
     float: left;
     margin: 0 1rem;
+    border-radius: 3px;
+    border: solid 0.2rem #551a8b;
+    box-shadow: 10px 5px 5px black;
 }
 
 .bio-text {
-    padding: 0 1rem;
-}
-
-#header-img {
-    border-radius: 5px;
-}
-
-#wrapper {
-  background-color: #000;
-  border-radius: 5px;
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 0.5% 0.5%;
-}
-
-.site-content {
-  background-color: #885FAE;
-  max-width: 100%;
-  margin: 0 auto;
-  /*padding: 0 1%;*/
-}
-
-body {
-    margin: 0;
+    padding: 1rem 2rem;
 }
 
 /**********************************
- CSS for countdown timer
+ CSS for countdown timer row
 ***********************************/
-.wrap {
-    background: #885FAE;
+
+.row-wrapper.row {
     margin: 0;
     width: 100%;
-    line-height: normal;
-}
-
-.time-to {
-    text-align: center;
-    color: #eee;
-    font-size: 1rem;
-}
-
-.time-to.wrap.row {
+    background: #E6E6FA;
     max-width: 100%;
+    border-top: solid #000 2px;
     border-bottom: solid #000 2px;
+    box-shadow: inset 0 0 1em #551a8b;
+    text-align: center;
 }
 
-.time-to span {
-    font-size: 1.25rem;
+#btn-donate {
+    padding-bottom: 0.75rem;
+    padding-top: 1rem;
+}
+
+#btn-register {
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
 }
 
 /**********************************
@@ -263,7 +263,7 @@ a:hover.back-to-top {
 }
 
 div .table-row-hr {
-    background-color: #247cbd;
+    background-color: #551a8b;
     margin-top: 1.5em;
     padding-top: 0.25em;
     min-width: 95%;
@@ -396,7 +396,7 @@ div .meta-data > * {
     div .table-row-hr {
         margin-top: 2em;
         padding-top: 1em;
-        background-color: #247cbd;
+        background-color: #551a8b;
         min-width: 45%;
         border-radius: 3px;
         border: solid 0.2rem #1d1a8b;

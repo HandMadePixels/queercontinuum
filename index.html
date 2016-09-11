@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="QueerCon">
+<html ng-app="QueerCon" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,11 @@
 
         <!--Social Media meta
         ____________________________________________________________________-->
-        <meta property="og:url"             content="https://handmadepixels.github.io/queercon/" />
+        <meta property="og:url"             content="https://queercon.xyz" />
         <meta property="og:type"            content="website" />
         <meta property="og:title"           content="Queer Continuum Conference -- QueerCon" />
         <meta property="og:description"     content="Queer Continuum Conference -- QueerCon" />
-        <meta property="og:image"           content="https://handmadepixels.github.io/queercon/img/QCLogo.png" />
+        <meta property="og:image"           content="https://queercon.xyz/img/banner-1.5x.png" />
         <meta property="og:locale"          content="en_US" />
 
         <!--Zurb Foundation Resources:
@@ -28,13 +28,35 @@
         <link href='//fonts.googleapis.com/css?family=Ubuntu:400,500,700|Merriweather+Sans:400,700,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
 
+        <!--Favicons:
+        ____________________________________________________________________-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicons.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons.ico/favicon-16x16.png">
+        <link rel="manifest" href="img/favicons.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicons.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
         <!--Local Customization:
         ____________________________________________________________________-->
         <link rel="stylesheet" href="css/main.css">
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     </head>
-    <body role="document" ng-controller="MainCtrl">
+    <body role="document" ng-controller="MainCtrl" id="bodyAnchor">
+        <div id="scrollToTop"></div>
+
         <div id="wrapper">
             <div>
                 <back-to-top></back-to-top>
@@ -52,8 +74,8 @@
 
                             <li class="name text-center">
                                 <h1>
-                                    <a id="site-name" ui-sref="home">
-                                        QueerCon 2015
+                                    <a id="site-name" href="#bodyAnchor">
+                                        QueerCon2016
                                     </a>
                                 </h1>
                             </li>
@@ -84,28 +106,48 @@
                 <!-- ***********************
                      Navigation (End)
                 **************************** -->
-                <div class='time-to wrap row'>
-                    <div class="small-12 medium-12 large-8 columns">
-                        <span class="jenna-text">Exploring the Nuances of Sexuality & Attraction.</span>
-                        <!--<span>QueerCon begins in...</span>
-                        <span countdown='' date='September 12, 2015 09:00:00'>&nbsp;</span>-->
-                    </div>
-                    <div class="show-for-large-up large-4 columns">
-                        <!-- Go to www.addthis.com/dashboard to customize tools -->
-                        <div class="addthis_sharing_toolbox"></div>
-                    </div>
-                </div>
                 <div id="header-img">
                     <a href="#/">
-                        <img class="img-responsive" src="img/QCBanner-color.png" alt="Queer Continuum Conference - header image of logo">
+                        <img class="img-responsive" src="img/banner-1.5x.png"
+                             alt="Queer Continuum Conference - header image of logo">
                     </a>
                 </div>
+                <div class='row-wrapper row'>
+                    <div class="medium-6 columns">
+                        <p><span>QueerCon begins in...</span>
+                        <span countdown='' date='September 24, 2016 09:00:00'></span></p>
+                    </div>
+                    <div id="btn-register" class="medium-3 columns">
+                        <span>
+                            <!--<p>Registration opening soon!</p>-->
+                            <a href="http://www.eventbrite.com/e/queer-continuum-conference-2016-tickets-27238770897?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.com/custombutton?eid=27238770897" alt="Eventbrite - Queer Continuum Conference 2016" />
+                            </a>
+                        </span>
+                    </div>
+                    <div id="btn-donate" class="medium-3 columns">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_donations">
+                            <input type="hidden" name="business" value="finance@utahpridecenter.org">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="item_name" value="1 to 5 Club - Utah Pride Center">
+                            <input type="hidden" name="no_note" value="0">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                </div>
             </header>
-            <div id="scrollToHere"></div>
             <!-- ***********************
                  Header (End)
             **************************** -->
+            <div id="scrollToHere"></div>
             <section ui-view-container class="site-content">
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_follow_toolbox text-center"></div>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox text-center"></div>
                 <div ui-view>
                 <!-- All Main Page Content will be placed here by the Angular UI.Router -->
                 </div>
@@ -114,20 +156,26 @@
                  Footer
             **************************** -->
             <footer class="site-content text-center">
-                <div class="row">
+                <div class="row-wrapper row">
+                    <span><em>
+                        <p>We are committed to maintaining a safe and inclusive space. Please use inclusive language.</p>
+                        <p>Also, please avoid wearing strong scents. Enjoy the conference!</p>
+                    </em></span>
+                </div>
+                <!--<div class="row">
                     <div class="small-12 medium-6 large-4 columns">
                         <p><strong>When</strong><br>
-                            Saturday, Sep 12, 2015<br>
+                            Saturday, Sep 24, 2016<br>
                             9:00am - 4:00pm</p>
                         <p class="open-close"></p>
                     </div>
                     <div class="small-12 medium-6 large-4 columns">
                         <p><strong>Where:</strong><br>
-                                <a href="//www.google.com/maps/place/Rowland+Hall-St+Mark's+School/@40.751107,-111.8631118,17z/data=!4m6!1m3!3m2!1s0x8752f55a3398492f:0xb248c0846b4afe!2sRowland+Hall-St+Mark's+School!3m1!1s0x8752f55a3398492f:0xb248c0846b4afe"
+                                <a href="//www.google.com/maps/place/210+E+400+S,+Salt+Lake+City,+UT+84111/@40.760034,-111.8864477,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f513816e33cf:0xf6655a3dbf116ac9!8m2!3d40.76003!4d-111.884259"
                                    target="_blank"><span class="fa fa-map-marker"> </span>
-                                    Rowland Hall-St Marks School<br>
-                                    843 Lincoln St<br>
-                                    Salt Lake City, UT 84102
+                                    SLC Public Library (Downtown)<br>
+                                    210 E 400 S<br>
+                                    Salt Lake City, UT 84111
                                 </a>
                         </p>
                     </div>
@@ -135,11 +183,18 @@
                         <p><strong>Contact:</strong><br>
                             <a href="//facebook.com/pages/1-to-5-Club/195455310485661"> <span class="fa fa-facebook-official"> </span>
                                 The 1to5Club Facebook Page</a><br>
-                            <a href="mailto:shauna@utahpridecenter.org?subject=Hello%20From%20A%20Web%20Site%20Visitor"> <span class="fa fa-envelope"> </span>
-                                 shauna@utahpridecenter.org</a>
+                            <a href="mailto:1to5club@utahpridecenter.org?subject=Hello%20From%20A%20Web%20Site%20Visitor"> <span class="fa fa-envelope"> </span>
+                                 1to5club@utahpridecenter.org</a>
                         </p>
                     </div>
+                </div>-->
+                <div class="row">
+                    <div class="text-center">
+                        <h2 class="text-center jenna-text">Mission Statement</h2>
+                        <p>Queer Continuum is a safe space for exploring all aspects of sexuality and attraction. From bisexual to pansexual, aromantic to polyamorous, we embrace and deconstruct how race, class, gender, ability and other facets of our identities intersect and affect us. With a commitment to both diversity and inclusion, we challenge social norms and instigate meaningful conversations that strengthen our "queer"mmunity.</p>
+                    </div>
                 </div>
+                <!--<hr>-->
                 <div class="row">
                     <div id="copyright" class="column">
                         <p><copyright-string></copyright-string></p>
@@ -147,7 +202,7 @@
                 </div>
                 <div class="row">
                     <div class="column">
-                        <p>This site hand-coded by <a href="//joniwebgirl.com" target="_blank">Joni Weiss</a> in 2015.</p>
+                        <p>This site hand-coded by <a href="//handmadepixels.com" target="_blank">Joni Weiss</a>.</p>
                     </div>
                 </div>
             </footer>
@@ -156,13 +211,15 @@
         ____________________________________________________________________-->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-aria.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
         <script src="js/angular-smooth-scroll.js"></script>
 
         <script src="js/app.js"></script>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55b297f422ca93ce" async="async"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d2321c6c829de0"></script>
+
 
         <!-- Script resources for Foundation: -->
         <script src="js/foundation.min.js"></script>
