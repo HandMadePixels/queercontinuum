@@ -1,18 +1,18 @@
 [
     {
+        "title": "Queer 101",
+        "summary": "",
+        "presenter": "Kellian Donnelly, Nichole Jensen, and Coco Barth",
+        "session": "1",
+        "room": "Conference Room A",
+        "note": ""
+    },
+    {
         "title": "Personal Boundaries/Misogyny/Racism in Queer Spaces",
         "summary": "Despite our marginalized experience due to our sexual identity, queer spaces can often be a place where individuals with intersecting identities can feel unsafe. This session will be a discussion on ways to improve inclusivity of queer spaces, avoiding unintentionally harmful behavior, and negotiating personal boundaries in sexually liberated spaces.",
         "presenter": "Dylan Richardson",
         "session": "1",
-        "room": "TBD",
-        "note": ""
-    },
-    {
-        "title": "Self-care for Activists",
-        "summary": "This session is a guided workshop with the facilitators and the audience on self-care in activism. Participants can expect to come away with strategies for balancing necessary self-care with their own needs for social and political activism. Come prepared to share your own ideas!",
-        "presenter": "Rachel Black & Alexander Langshall",
-        "session": "1",
-        "room": "TBD",
+        "room": "Conference Room B",
         "note": ""
     },
     {
@@ -20,15 +20,15 @@
         "summary": "This session will examine the historical and modern portrayal of characters with non-monosexual identities across a variety of art forms.",
         "presenter": "Rowan Fae & Tiffany Mankins",
         "session": "1",
-        "room": "TBD",
+        "room": " Conference Room C",
         "note": ""
     },
     {
         "title": "Intersectionality (Queer and....)",
         "summary": " This session will feature a panel of individuals whose marginalized and non-marginalized identities intersect and interact in ways that foster unique lived experiences and highlight the areas in which movements can improve inclusivity.  Come ask questions and hear the panelists speak on their identities and experiences.",
-        "presenter": "Michael Timothy, Dree Wright, Jared Urbana, and Joni Weiss",
+        "presenter": "Michael Timothy, Dree Wright, Jared Urbina, and Joni Weiss",
         "session": "2",
-        "room": "TBD",
+        "room": "Conference Room A",
         "note": ""
     },
     {
@@ -36,15 +36,23 @@
         "summary": "",
         "presenter": "Lizzy Donnelly",
         "session": "2",
-        "room": "TBD",
+        "room": "Conference Room B",
         "note": ""
     },
     {
-        "title": "Queer Writers",
+        "title": "Queer Writers Discussion",
         "summary": "",
-        "presenter": "Shauna Brock",
+        "presenter": "Shauna Brock and Taylor Hoffman",
         "session": "2",
-        "room": "TBD",
+        "room": "Conference Room C",
+        "note": ""
+    },
+    {
+        "title": "Self-care for Activists",
+        "summary": "This session is a guided workshop with the facilitators and the audience on self-care in activism. Participants can expect to come away with strategies for balancing necessary self-care with their own needs for social and political activism. Come prepared to share your own ideas!",
+        "presenter": "Rachel Black & Alexander Langshall",
+        "session": "3",
+        "room": "Conference Room A",
         "note": ""
     },
     {
@@ -52,15 +60,7 @@
         "summary": "Beyond gender and sexuality, binaries exist across many facets of our existence and often restrict our belief of what is possible.  This workshop will question the usefulness of binary thinking, discuss ways of identifying problematic binary thinking, and brainstorm alternative approaches to seemingly dichotomous situations.",
         "presenter": "Adair Kovac & Dylan Ashley",
         "session": "3",
-        "room": "TBD",
-        "note": ""
-    },
-    {
-        "title": "Queer 101",
-        "summary": "",
-        "presenter": "Kellian, Nicole, and Coco",
-        "session": "3",
-        "room": "TBD",
+        "room": "Conference Room B",
         "note": ""
     },
     {
@@ -68,7 +68,7 @@
         "summary": "This session will discuss common misconseptions surrounding disability in the B+ community.",
         "presenter": "Dree Wright and Erica Head",
         "session": "3",
-        "room": "TBD",
+        "room": "Conference Room C",
         "note": ""
     }
 ]
