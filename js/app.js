@@ -67,7 +67,7 @@ app.directive('countdown', [
                 $interval(function () {
                     var diff;
                     diff = Math.floor((future.getTime() - new Date().getTime()) / 1000);
-                    console.log(diff);
+                    // console.log(diff);
                     return element.text(Util.dhms(diff));
                 }, 1000);
             }
