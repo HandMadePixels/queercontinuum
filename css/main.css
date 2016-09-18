@@ -243,14 +243,14 @@ a.back-to-top {
     z-index: 999;
     right: 1%;
     bottom: 5%;
-    background: #2aabd2 url("../img/up-arrow.png") no-repeat center 43%;
+    background: #8b1a89 url("../img/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
 }
 
 a:hover.back-to-top {
-    background-color: #247cbd;
+    background-color: #551a8b;
 }
 
 
@@ -382,7 +382,7 @@ div .meta-data > * {
     }
 
     .table-row .title {
-        border-bottom: thin dotted #2aabd2;
+        border-bottom: thin dotted #551a8b;
     }
 
     div .title {
