@@ -1,8 +1,8 @@
 [
     {
         "title": "Queer 101",
-        "summary": "",
-        "presenter": "Kellian Donnelly, Nichole Jensen, and Coco Barth",
+        "summary": "In this workshop we will be defining all of the letters in the 'queer alphabet soup' and discussing what it means to be 'queer.' We will also discuss some of the etiquette within the queer community for both allies and LGBT+ members. This session will have plenty of time for a Q&A, and we will endeavor to answer all of your burning questions about the Queerdom",
+        "presenter": "Kellian Donnelly and Lizzy Donnelly",
         "session": "1",
         "room": "Conference Room A",
         "note": ""
@@ -10,7 +10,7 @@
     {
         "title": "Personal Boundaries/Misogyny/Racism in Queer Spaces",
         "summary": "Despite our marginalized experience due to our sexual identity, queer spaces can often be a place where individuals with intersecting identities can feel unsafe. This session will be a discussion on ways to improve inclusivity of queer spaces, avoiding unintentionally harmful behavior, and negotiating personal boundaries in sexually liberated spaces.",
-        "presenter": "Dylan Richardson, Jared Urbina, and Yasin Fairley",
+        "presenter": "Dylan Richardson, Jared Urbina, and Yasin (Ya-Ya) Fairley",
         "session": "1",
         "room": "Conference Room B",
         "note": ""
@@ -26,14 +26,14 @@
     {
         "title": "Intersectionality (Queer and....)",
         "summary": " This session will feature a panel of individuals whose marginalized and non-marginalized identities intersect and interact in ways that foster unique lived experiences and highlight the areas in which movements can improve inclusivity.  Come ask questions and hear the panelists speak on their identities and experiences.",
-        "presenter": "Dree Wright, Jared Urbina, Yasin Fairley, and Joni Weiss",
+        "presenter": "Dree Wright, Jared Urbina, Yasin (Ya-Ya) Fairley, and Joni Weiss",
         "session": "2",
         "room": "Conference Room A",
         "note": ""
     },
     {
-        "title": "Healthcare for Sexually Fluid People",
-        "summary": "",
+        "title": "Healthcare for Sexually Fluid People (Panel Discussion)",
+        "summary": "This workshop will focus on some of the health challenges that LGBT+ people face, especially those which are more serious in the b+ community. We will also discuss some of the challenges in accessing proper healthcare as a b+ individual, and what patients and providers can do to bridge these barriers. We will talk about some of the LGBT+ affirmative healthcare professionals and groups throughout the valley. Panelists will include Dr. Rixt Luikenaar MD and... ",
         "presenter": "Lizzy Donnelly",
         "session": "2",
         "room": "Conference Room B",
@@ -41,7 +41,7 @@
     },
     {
         "title": "Queer Writers Discussion",
-        "summary": "",
+        "summary": "Queer Writers will focus on the need for bi/pan/ace representation in literature, comics, and academic writing. More than just a Q & A, participants will engage in writing prompts and exercises that will help to engage and imagine a more intersectional writing world. Lists and links of good and bad representation will also be provided.",
         "presenter": "Shauna Brock and Taylor Hoffman",
         "session": "2",
         "room": "Conference Room C",
@@ -67,7 +67,7 @@
         "title": "Sexual Fluidity and Disability",
         "summary":
         "This session will discuss concepts and common misconceptions surrounding disability in the B+ community.",
-        "presenter": "Dree Wright",
+        "presenter": "Dree Wright and Stacy Stanford",
         "session": "3",
         "room": "Conference Room C",
         "note": ""
