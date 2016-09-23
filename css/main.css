@@ -154,10 +154,10 @@ img {
 }
 
 /**********************************
- CSS for countdown timer row
+ CSS for Sub-header Section
 ***********************************/
 
-.row-wrapper.row {
+.qc-subheader {
     margin: 0;
     width: 100%;
     background: #E6E6FA;
@@ -167,6 +167,17 @@ img {
     box-shadow: inset 0 0 1em #551a8b;
     text-align: center;
 }
+
+/*.row-wrapper.row {
+    margin: 0;
+    width: 100%;
+    background: #E6E6FA;
+    max-width: 100%;
+    border-top: solid #000 2px;
+    border-bottom: solid #000 2px;
+    box-shadow: inset 0 0 1em #551a8b;
+    text-align: center;
+}*/
 
 #btn-donate {
     padding-bottom: 0.75rem;
