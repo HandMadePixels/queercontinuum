@@ -33,8 +33,14 @@
   font-style: normal;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -46,6 +52,7 @@ Colors {
   GC-Blue: #1d1a8b;
   GC-Magenta: #8b1a89;
   GC-Purple: #551a8b;
+  Background: whitesmoke;
 }
 
 body {
