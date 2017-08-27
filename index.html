@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Queer Continuum Conference -- QueerCon</title>
-    <meta name="description" content="Queer Continuum Conference -- QueerCon">
-    <meta name="author" content="Joni Weiss dba HandMade Pixels">
+    <meta name="description" content="Queer Continuum Conference -- QueerCon.">
+    <meta name="author" content="Joni Weiss">
 
     <!--Social Media meta
         ____________________________________________________________________-->
@@ -59,7 +59,7 @@
 
 <body role="document" ng-controller="MainCtrl" id="bodyAnchor">
     <script>
-        window.fbAsyncInit = function() {
+        window.fbAsyncInit = function () {
             FB.init({
                 appId: '1102230213194868',
                 xfbml: true,
@@ -67,7 +67,7 @@
             });
         };
 
-        (function(d, s, id) {
+        (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {
                 return;
@@ -88,6 +88,11 @@
                  Header (Begin)
             **************************** -->
         <header class="site-content">
+            <div id="header-img">
+                <a href="#/">
+                                    <img class="img-responsive" src="img/queercon-banner.png" alt="Queer Continuum Conference - header image of logo">
+                                </a>
+            </div>
             <!-- ***********************
                      Navigation (Begin)
                 **************************** -->
@@ -120,7 +125,7 @@
                             <!--<li class="divider"></li>-->
                             <li><a ui-sref="map">Map</a></li>
                             <li class="divider"></li>
-                            <li><a ui-sref="aboutUs">QueerCon Who?</a></li>
+                            <li><a ui-sref="aboutUs">About QueerCon</a></li>
                             <li class="divider"></li>
                         </ul>
                     </section>
@@ -129,31 +134,36 @@
             <!-- ***********************
                      Navigation (End)
                 **************************** -->
-            <div id="header-img">
-                <a href="#/">
-                    <img class="img-responsive" src="img/queercon-banner.png" alt="Queer Continuum Conference - header image of logo">
-                </a>
-            </div>
             <section class="qc-subheader">
+
                 <div class="row-wrapper row">
-                    <p>Utah’s 1 to 5 Club is proud to present the third annual Queer Continuum conference. This year’s theme is Resistance Beyond Existence. We will explore ways to move beyond merely living and into a thriving life, building community, and
-                        actively queering the world around us.
+                    <p>Utah’s 1 to 5 Club is proud to present the third annual Queer Continuum conference.<br /> This year’s
+                        theme is All of Us or None of Us.
                     </p>
                 </div>
+                <hr>
                 <div class='row-wrapper row'>
-                    <div class="medium-5 columns">
-                        <p><span>QueerCon begins in...</span>
+                    <div class="medium-4 columns">
+                        <p><span>QueerCon 2017 begins in:</span><br />
                             <span countdown='' date='September 23, 2017 09:00:00'></span></p>
                     </div>
                     <!--<div id="btn-register" class="medium-3 columns">
                             <span>
                                 &lt;!&ndash;<p>Registration opening soon!</p>&ndash;&gt;
-                                <a href="http://www.eventbrite.com/e/queer-continuum-conference-2016-tickets-27238770897?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.com/custombutton?eid=27238770897" alt="Eventbrite - Queer Continuum Conference 2016" />
+                                <a href="http://www.eventbrite.com/e/queer-continuum-conference-2016-tickets-27238770897?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.com/custombutton?eid=27238770897" alt="Eventbrite - Queer Continuum Conference 2017" />
                                 </a>
                             </span>
                         </div>-->
-                    <div id="btn-donate" class="medium-6 columns">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <div class="medium-4 columns">
+                        <p>
+                            <a href="https://connect.clickandpledge.com/w/Form/2380d8b3-e10f-41c3-8d8b-6ab563e86fcc" target="_blank">
+                                <strong>
+                                    <span class="fa fa-credit-card" aria-hidden="true"> </span>
+                                    Donate
+                                </strong>
+                            </a>
+                        </p>
+                        <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_donations">
                             <input type="hidden" name="business" value="finance@utahpridecenter.org">
                             <input type="hidden" name="lc" value="US">
@@ -163,9 +173,9 @@
                             <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                        </form>
+                        </form> -->
                     </div>
-                    <div class="medium-6 columns">
+                    <div class="medium-4 columns">
                         <p>
                             <a href="assets/QueerCon2016.pdf" target="_blank">
                                 <strong>
@@ -195,7 +205,7 @@
                  Footer
             **************************** -->
         <footer class="site-content text-center">
-            <div class="row-wrapper row">
+            <div class="row">
                 <span><em>
                         <p>We are committed to maintaining a safe and inclusive space. Please use inclusive language.
                         </p>
@@ -203,6 +213,7 @@
                         </p>
                     </em></span>
             </div>
+            <hr>
             <div class="row">
                 <div class="small-12 medium-6 large-4 columns">
                     <p><strong>When</strong><br> Saturday, Sep 23, 2017<br> 9:00am - 4:00pm</p>
@@ -210,7 +221,8 @@
                 </div>
                 <div class="small-12 medium-6 large-4 columns">
                     <p><strong>Where:</strong><br>
-                        <a href="//www.google.com/maps/place/210+E+400+S,+Salt+Lake+City,+UT+84111/@40.760034,-111.8864477,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f513816e33cf:0xf6655a3dbf116ac9!8m2!3d40.76003!4d-111.884259" target="_blank"><span class="fa fa-map-marker"> </span>
+                        <a href="//www.google.com/maps/place/210+E+400+S,+Salt+Lake+City,+UT+84111/@40.760034,-111.8864477,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f513816e33cf:0xf6655a3dbf116ac9!8m2!3d40.76003!4d-111.884259"
+                            target="_blank"><span class="fa fa-map-marker"> </span>
                                     SLC Public Library (Downtown)<br>
                                     210 E 400 S<br>
                                     Salt Lake City, UT 84111
@@ -225,14 +237,18 @@
                     </p>
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="text-center">
                     <h2 class="text-center jenna-text">Mission Statement</h2>
-                    <p>Queer Continuum is a safe space for exploring all aspects of sexuality and attraction. From bisexual to pansexual, aromantic to polyamorous, we embrace and deconstruct how race, class, gender, ability and other facets of our identities
-                        intersect and affect us. With a commitment to both diversity and inclusion, we challenge social norms and instigate meaningful conversations that strengthen our "queer"mmunity.</p>
+                    <p>Queer Continuum is a safe space for exploring all aspects of sexuality and attraction. From bisexual
+                        to pansexual, aromantic to polyamorous, we embrace and deconstruct how race, class, gender, ability
+                        and other facets of our identities intersect and affect us. With a commitment to both diversity and
+                        inclusion, we challenge social norms and instigate meaningful conversations that strengthen our "queer"mmunity.</p>
                 </div>
             </div>
             <!--<hr>-->
+            <hr>
             <div class="row">
                 <div id="copyright" class="column">
                     <p>
